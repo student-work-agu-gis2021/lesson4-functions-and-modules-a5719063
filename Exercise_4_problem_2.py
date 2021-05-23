@@ -40,7 +40,7 @@ def temp_classifier(temp_celsius):
   elif temp_celsius<15:
    return 2
   elif temp_celsius>=15:
-    return 3
+    return 3\\
 
 # Use your newly created function to print the answers to the following questions:
 
