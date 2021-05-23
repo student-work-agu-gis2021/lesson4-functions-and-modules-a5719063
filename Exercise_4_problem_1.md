@@ -24,7 +24,14 @@ If everything in your script is working properly the following test case should 
 
 
 ```python
-# YOUR CODE HERE
+def fahr_to_celsius(temp_fahrenheit):
+  """Create a function that converts the input temperature from Fahrenheit to Celsius.
+Set the variable converted_temp and assign the expression to be converted. 
+The conversion formula from Fahrenheit to Celsius to as follows. 
+T_ {Celsius} = (T _ {Fahrenheit} -32) / 1.8
+Returns the value of the input temperature changed to Celsius."""
+  converted_temp= (temp_fahrenheit-32)/1.8
+  return converted_temp
 ```
 
 ### Problem 1 tests
@@ -50,7 +57,9 @@ We would like you to think about and answer the following questions based on the
   
 Write your answers below.
 
-YOUR ANSWER HERE
+1, Yes.
+
+2, You don't have to write programs repeatedly.
 
 #### Done!
 

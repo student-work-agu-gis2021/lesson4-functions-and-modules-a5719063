@@ -63,7 +63,14 @@ temp_data =  [19, 21, 21, 21, 23, 23, 23, 21, 19, 21, 19, 21, 23, 27, 27, 28, 30
 
 
 ```python
-# YOUR CODE HERE
+from temp_functions import fahr_to_celsius,
+temp_classifier
+
+temp_classes = []
+for i in range(len(temp_data)):
+  temp_celsius = fahr_to_celsius(temp_data[i])
+  temp_class = temp_classifier(temp_celsius)
+  temp_classes.append(temp_class)
 ```
 
 #### Part 2 (continues)
@@ -74,9 +81,11 @@ temp_data =  [19, 21, 21, 21, 23, 23, 23, 21, 19, 21, 19, 21, 23, 27, 27, 28, 30
     2. Count and assign to each variable how many times values 0, 1, 2, and 3 are present in the `temp_classes` list and print out the results below. In other words, assign the value of how many time `0` is in the list to the variable `zeros`, and so on. 
   
 
-```python
-# YOUR CODE HERE
-
+```Python
+zeros = temp_classes.count(0)
+ones = temp_classes.count(1)
+twos = temp_classes.count(2)
+threes = temp_classes.count(3)
 ```
 
 ### Problem 3 tests
